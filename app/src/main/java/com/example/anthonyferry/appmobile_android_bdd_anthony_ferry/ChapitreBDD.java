@@ -62,7 +62,7 @@ public class ChapitreBDD {
     }
 
     public int removeChapter(String name) {
-        return bdd.delete(NOM_TABLE, COL_NOM + " = " + name, null);
+        return bdd.delete(NOM_TABLE, COL_NOM + " = '" + name + "'", null);
     }
 
     public Chapitre getChapter(String name) {
