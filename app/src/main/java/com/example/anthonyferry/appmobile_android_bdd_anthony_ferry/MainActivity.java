@@ -23,6 +23,19 @@ public class MainActivity extends AppCompatActivity {
         GetObjectsId();
 
         bdd = new ChapitreBDD(this);
+        bdd.openForWrite();
+
+        Chapitre chapitre1 = new Chapitre("titre 1", "description 1");
+        Chapitre chapitre2 = new Chapitre("titre 2", "description 2");
+        Chapitre chapitre3 = new Chapitre("titre 3", "description 3");
+        Chapitre chapitre4 = new Chapitre("titre 4", "description 4");
+        Chapitre chapitre5 = new Chapitre("titre 5", "description 5");
+
+        bdd.insertChapter(chapitre1);
+        bdd.insertChapter(chapitre2);
+        bdd.insertChapter(chapitre3);
+        bdd.insertChapter(chapitre4);
+        bdd.insertChapter(chapitre5);
 
         ArrayList<Chapitre> chapitres = bdd.getAllChapters();
 

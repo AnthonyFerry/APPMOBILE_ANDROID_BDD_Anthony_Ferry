@@ -15,7 +15,7 @@ public class ChapitreBaseSQLite extends SQLiteOpenHelper {
     public static final String Ma_Colonne_Nom = "NOM";
     public static final String Ma_Colonne_Description = "DESCRIPTION";
 
-    public static final String CREATE_BDD = "CREATE TABLE " + nom_Table + "(" + Ma_Colonne_Id + " PRIMARY KEY AUTOINCREMENT, " + Ma_Colonne_Nom + " VARCHAR(32) NOT NULL, " + Ma_Colonne_Description + " TEXT NOT NULL);";
+    public static final String CREATE_BDD = "CREATE TABLE " + nom_Table + "(" + Ma_Colonne_Id + " INTEGER PRIMARY KEY AUTOINCREMENT, " + Ma_Colonne_Nom + " VARCHAR(32) NOT NULL, " + Ma_Colonne_Description + " TEXT NOT NULL);";
 
     public ChapitreBaseSQLite(Context context, String name, SQLiteDatabase.CursorFactory factory, int version)
     {

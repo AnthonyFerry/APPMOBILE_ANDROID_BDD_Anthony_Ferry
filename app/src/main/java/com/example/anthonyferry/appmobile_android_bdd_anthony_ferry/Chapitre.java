@@ -33,6 +33,14 @@ public class Chapitre {
         this.description = description;
     }
 
+    public Chapitre(String nom, String description) {
+        this.nom = nom;
+        this.description = description;
+    }
+
+    public Chapitre() {
+    }
+
     @Override
     public String toString() {
         StringBuilder sb = new StringBuilder();
